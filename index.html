@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guest_programme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to my place</h1>
+            <h2>Titi</h2>
+            <form action="">
+                <input type="text" id="nameEntered">
+                <p>
+                 Good day, <span id="nameField">Student</span>
+            </form>
+        </div>
+    </div>
+    <!-- loop:while,dowhile,for -->
+    <script>
+        function nameHandler(e) {
+            if (e.keyCode == 13) {
+                var nameEntered = document.getElementById('nameEntered');
+                var nameField = document.getElementById('nameField');
+                nameField.innerHTML = nameEntered.value;
+
+            }
+        }
+        document.addEventListener('keyup', nameHandler);
+    </script>
+</body>
+</html>
